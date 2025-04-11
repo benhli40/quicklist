@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickList</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>QuickList 📝</h1>
+    <button id="toggle-theme" class="theme-toggle">Toggle Theme</button>
+    
+    <div class="quicklist-meta">
+      <span id="streak-count">🔥 Streak: 0 days</span>
+      <button id="sort-toggle">Sort: Incomplete First</button>
+    </div>
+    
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Add a new task..." autocomplete="off" />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
